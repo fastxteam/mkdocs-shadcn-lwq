@@ -92,13 +92,12 @@ if you want to show/hide the last update date for a specific page.
 show_datetime: true
 ```
 
-
-Finally you an also load per-page CSS and JS files. This is done through the `extra_css` and `extra_javascript` attributes.
+Finally you can also load per-page CSS and JS files. This is done through the `extra_css` and `extra_javascript` attributes.
 
 ```yaml
-extra_css:
+extra_css: # included in <head>
   - css/custom.css
-extra_javascript:
+extra_javascript: # included at the bottom of the page
   - js/custom.js
 ```
 

@@ -1,0 +1,124 @@
+/* ======================================================
+   Base — shared layout, interaction, and a11y
+   ====================================================== */
+
+article a.button {
+  @apply no-underline;
+}
+
+article input[type="button"],
+article a.button,
+article button {
+  @apply inline-flex shrink-0 items-center justify-center bg-clip-padding
+    font-medium whitespace-nowrap transition-all outline-none select-none
+    /* svg */
+    [&_svg]:pointer-events-none [&_svg]:shrink-0
+    /* interaction */
+    active:not-aria-[haspopup]:translate-y-px
+    disabled:pointer-events-none disabled:opacity-50
+    /* validation */
+    aria-invalid:border-destructive aria-invalid:ring-3
+    aria-invalid:ring-destructive/20
+    dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40
+    /* default size (md) */
+    rounded-lg text-sm h-8 gap-1.5 px-2.5
+    has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2
+    [&_svg:not([class*='size-'])]:size-4;
+}
+
+/* ======================================================
+   Variants
+   ====================================================== */
+
+/* Primary (default — applied when no other variant class is present) */
+article input[type="button"].primary,
+article input[type="button"]:not(.secondary):not(.outline):not(.destructive):not(.ghost):not(.link),
+article a.button.primary,
+article a.button:not(.secondary):not(.outline):not(.destructive):not(.ghost):not(.link),
+article button.primary,
+article button:not(.secondary):not(.outline):not(.destructive):not(.ghost):not(.link) {
+  @apply border border-transparent
+    bg-primary text-primary-foreground hover:bg-primary/80
+    focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+article input[type="button"].outline,
+article a.button.outline,
+article button.outline {
+  @apply border border-border bg-background
+    hover:bg-muted hover:text-foreground
+    aria-expanded:bg-muted aria-expanded:text-foreground
+    dark:border-input dark:bg-input/30 dark:hover:bg-input/50
+    focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+article input[type="button"].secondary,
+article a.button.secondary,
+article button.secondary {
+  @apply border border-transparent
+    bg-secondary text-secondary-foreground hover:bg-secondary/80
+    aria-expanded:bg-secondary aria-expanded:text-secondary-foreground
+    focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+article input[type="button"].ghost,
+article a.button.ghost,
+article button.ghost {
+  @apply border border-transparent
+    hover:bg-muted hover:text-foreground
+    aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50
+    focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+/* Destructive uses its own focus-visible colors (no border-ring / ring-ring) */
+article input[type="button"].destructive,
+article a.button.destructive,
+article button.destructive {
+  @apply border border-transparent
+    bg-destructive/10 text-destructive hover:bg-destructive/20
+    focus-visible:ring-3 focus-visible:border-destructive/40 focus-visible:ring-destructive/20
+    dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40;
+}
+
+article input[type="button"].link,
+article a.button.link,
+article button.link {
+  @apply border border-transparent
+    text-primary underline-offset-4 hover:underline
+    focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+/* ======================================================
+   Sizes — override the default (md) dimensions
+   ====================================================== */
+
+article input[type="button"].xs,
+article a.button.xs,
+article button.xs {
+  @apply h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs
+    has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5
+    [&_svg:not([class*='size-'])]:size-3;
+}
+
+article input[type="button"].sm,
+article a.button.sm,
+article button.sm {
+  @apply h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem]
+    has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5
+    [&_svg:not([class*='size-'])]:size-3.5;
+}
+
+/* md is the default — no override needed */
+article input[type="button"].lg,
+article a.button.lg,
+article button.lg {
+  @apply h-9 gap-1.5 px-2.5
+    has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3;
+}
+
+/* Icon: square, no horizontal padding — combine with a variant for colors */
+article input[type="button"].icon,
+article a.button.icon,
+article button.icon {
+  @apply aspect-square p-0;
+}
