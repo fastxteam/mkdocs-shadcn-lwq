@@ -2,7 +2,9 @@
 title: Welcome to mkdocs-shadcn
 summary: Beautifully designed mkdocs theme
 sidebar_title: Home
-order: 0
+description: Documentation that also shines 
+image: https://raw.githubusercontent.com/asiffer/mkdocs-shadcn/master/.github/assets/banner.png
+keywords: "mkdocs, shadcn, python" 
 external_links:
   "shadcn/ui": https://ui.shadcn.com/docs
 ---
