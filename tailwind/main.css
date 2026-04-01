@@ -19,6 +19,7 @@
 @import "./kbd.css";
 @import "./hover_card.css";
 @import "./toc.css";
+@import "./input.css";
 
 @theme {
 	--breakpoint-3xl: 1600px;
