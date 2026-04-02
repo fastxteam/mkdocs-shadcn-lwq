@@ -36,8 +36,12 @@
         {{ section.title }}</div>
     <div data-slot="sidebar-group-content" data-sidebar="group-content" class="w-full text-sm">
         <ul data-slot="sidebar-menu" data-sidebar="menu" class="flex w-full min-w-0 flex-col gap-0.5">
-            {% for sidebar_item in section.children|selectattr("is_page")|sort(attribute="meta.order") %}
+            {% for sidebar_item in section.children %}
+            {% if sidebar_item.children %}
+            {% include "components/sidebar_section.html" %}
+            {% else %}
             {% include "components/sidebar_item.html" %}
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
@@ -47,4 +51,6 @@
 
 
 {% endif %}
-<div class="sticky -bottom-1 z-10 h-16 shrink-0 bg-gradient-to-t from-background via-background/80 to-background/50 blur-xs"></div>
+<div
+    class="sticky -bottom-1 z-10 h-16 shrink-0 bg-gradient-to-t from-background via-background/80 to-background/50 blur-xs">
+</div>

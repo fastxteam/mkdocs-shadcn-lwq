@@ -1,5 +1,5 @@
 
-![banner](https://raw.githubusercontent.com/asiffer/mkdocs-shadcn/master/.github/assets/banner.png)
+![banner](./.github/assets/banner.png)
 
 <p align="center">
   <a href="https://github.com/squidfunk/mkdocs-shadcn/actions"><img
@@ -17,7 +17,7 @@
 </p>
 
 
-![screenshot](https://raw.githubusercontent.com/asiffer/mkdocs-shadcn/master/.github/assets/screenshot4.png)
+![screenshot](./.github/assets/screenshot.png)
 
 
 > [!IMPORTANT]  
