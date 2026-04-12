@@ -35,6 +35,7 @@ shadcn = "shadcn"
 [project.entry-points."mkdocs.plugins"]
 "shadcn/search" = "shadcn.plugins.search:SearchPlugin"
 "shadcn/excalidraw" = "shadcn.plugins.excalidraw:ExcalidrawPlugin"
+"shadcn/autonumber" = "shadcn.plugins.autonumber:AutoNumberPlugin"
 
 [build-system]
 requires = ["hatchling"]

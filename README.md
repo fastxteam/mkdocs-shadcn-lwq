@@ -105,3 +105,9 @@ In parallel, you are likely to run the tailwind watcher to compile the css sourc
 ```shell
 bun dev
 ```
+
+### Testing
+
+Tests are managed by [`pytest`](https://docs.pytest.org/en/stable/) and are located in the [tests/](./tests/) folder.
+
+Currently we only test that there is no browser issue through [playwright](https://playwright.dev/).
