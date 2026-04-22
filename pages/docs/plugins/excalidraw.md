@@ -15,7 +15,7 @@ The excalidraw plugin provides a true editor, integrated in the mkdocs dev serve
 
 plugins:
   - search
-  - excalidraw
+  - shadcn-lwq/excalidraw
 ```
 
 !!! note
@@ -42,7 +42,7 @@ You can change this folder with the `directory` option (the path is relative to 
 
 plugins:
   search:
-  excalidraw:
+  shadcn-lwq/excalidraw:
     directory: assets/excalidraw
 ```
 

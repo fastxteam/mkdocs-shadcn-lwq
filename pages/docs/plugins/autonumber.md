@@ -16,7 +16,7 @@ The `autonumber` plugin automatically numbers labeled elements (figures, tables,
 
 plugins:
   - search
-  - autonumber
+  - shadcn-lwq/autonumber
 ```
 
 ### Options
@@ -30,7 +30,7 @@ The default `prefixes` value is:
 
 ```yaml
 plugins:
-  autonumber:
+  shadcn-lwq/autonumber:
     prefixes:
       fig: Figure
       tbl: Table
@@ -41,7 +41,7 @@ You can override it or extend it with your own prefixes:
 
 ```yaml
 plugins:
-  autonumber:
+  shadcn-lwq/autonumber:
     prefixes:
       fig: Figure
       tbl: Table

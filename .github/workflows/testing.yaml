@@ -88,7 +88,7 @@ jobs:
           echo -e "# Minimal Testing Site" > docs/index.md
           echo -e 'site_name: "Minimal Testing Site"' > mkdocs.yml
           echo -e "theme:\n  name: shadcn-lwq" >> mkdocs.yml
-          echo -e "plugins:\n  - search\n  - excalidraw" >> mkdocs.yml
+          echo -e "plugins:\n  - search\n  - shadcn-lwq/excalidraw" >> mkdocs.yml
           echo -e "markdown_extensions:\n  - admonition\n  - codehilite\n  - fenced_code\n  - extra\n  - shadcn.extensions.echarts.alpha" >> mkdocs.yml
           cat mkdocs.yml
           # start the mkdocs dev server and then kill it after few seconds

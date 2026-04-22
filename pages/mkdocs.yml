@@ -21,9 +21,9 @@ theme:
 
 plugins:
   - search
-  - excalidraw
+  - shadcn-lwq/excalidraw
   - mkdocstrings
-  - autonumber:
+  - shadcn-lwq/autonumber:
       prefixes:
         th: Theorem
 
