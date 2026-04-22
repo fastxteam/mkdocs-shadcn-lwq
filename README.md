@@ -2,8 +2,8 @@
 ![banner](./.github/assets/banner.png)
 
 <p align="center">
-  <a href="https://github.com/squidfunk/mkdocs-shadcn/actions"><img
-    src="https://github.com/asiffer/mkdocs-shadcn/actions/workflows/testing.yaml/badge.svg"
+  <a href="https://github.com/fastxteam/mkdocs-shadcn-lwq/actions/workflows/testing.yaml"><img
+    src="https://github.com/fastxteam/mkdocs-shadcn-lwq/actions/workflows/testing.yaml/badge.svg"
     alt="Testing"
   /></a>
   <a href="https://pypistats.org/packages/mkdocs-shadcn-lwq"><img
@@ -26,7 +26,7 @@
 
 ## Documentation
 
-Yes, yes, the [documentation](https://asiffer.github.io/mkdocs-shadcn/) is built with this theme.
+Yes, yes, the [documentation](https://fastxteam.github.io/mkdocs-shadcn-lwq/) is built with this theme.
 
 ## Quick start
 
@@ -56,9 +56,9 @@ The theme tries to support the built-in extensions along with some `pymdownx` on
 - [x] [`pymdownx.blocks.tab`](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/tab/) 
 - [x] [`pymdownx.progressbar`](https://facelessuser.github.io/pymdown-extensions/extensions/progressbar/)
 - [x] [`pymdownx.arithmatex`](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
-- [x] builtin [`shadcn.echarts`](https://asiffer.github.io/mkdocs-shadcn/extensions/echarts/)
-- [x] builtin [`shadcn.iconify`](https://asiffer.github.io/mkdocs-shadcn/extensions/iconify/)
-- [x] builtin [`shadcn.codexec`](https://asiffer.github.io/mkdocs-shadcn/extensions/codexec/) 
+- [x] builtin [`shadcn.echarts`](https://fastxteam.github.io/mkdocs-shadcn-lwq/extensions/echarts/)
+- [x] builtin [`shadcn.iconify`](https://fastxteam.github.io/mkdocs-shadcn-lwq/extensions/iconify/)
+- [x] builtin [`shadcn.codexec`](https://fastxteam.github.io/mkdocs-shadcn-lwq/extensions/codexec/) 
 
 
 ## Plugins
@@ -76,8 +76,8 @@ We recently release the css sources we use to style the theme. It mainly uses [`
 
 First clone the repo:
 ```shell
-git clone https://github.com/asiffer/mkdocs-shadcn
-cd mkdocs-shadcn
+git clone https://github.com/fastxteam/mkdocs-shadcn-lwq
+cd mkdocs-shadcn-lwq
 ```
 
 Then you can install python dependencies ([`uv`](https://docs.astral.sh/uv/) required):
