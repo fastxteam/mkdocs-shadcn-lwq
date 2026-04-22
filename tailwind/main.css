@@ -33,6 +33,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant data-closing (&[data-closing="1"]);
 @custom-variant fixed (&:is(.layout-fixed *));
+@custom-variant full (&:is(.layout-full *));
 
 @plugin "@tailwindcss/typography";
 @plugin "tailwindcss-animate";

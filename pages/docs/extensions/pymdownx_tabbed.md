@@ -25,33 +25,33 @@ markdown_extensions:
 === "`pip`"
 
         :::bash
-        pip install mkdocs-shadcn
+        pip install mkdocs-shadcn-lwq
 
 
 === "uv"
 
         :::bash
-        uv add mkdocs-shadcn
+        uv add mkdocs-shadcn-lwq
 
 === "poetry"
 
         :::bash
-        poetry add mkdocs-shadcn
+        poetry add mkdocs-shadcn-lwq
 
 ~~~
 
 === "`pip`"
 
         :::bash
-        pip install mkdocs-shadcn
+        pip install mkdocs-shadcn-lwq
 
 
 === "uv"
 
         :::bash
-        uv add mkdocs-shadcn
+        uv add mkdocs-shadcn-lwq
 
 === "poetry"
 
         :::bash
-        poetry add mkdocs-shadcn
+        poetry add mkdocs-shadcn-lwq

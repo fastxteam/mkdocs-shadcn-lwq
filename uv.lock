@@ -1131,8 +1131,8 @@ wheels = [
 ]
 
 [[package]]
-name = "mkdocs-shadcn"
-version = "0.10.4"
+name = "mkdocs-shadcn-lwq"
+version = "0.10.5"
 source = { editable = "." }
 dependencies = [
     { name = "bottle" },

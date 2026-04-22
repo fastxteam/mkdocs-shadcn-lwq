@@ -27,19 +27,19 @@ markdown_extensions:
 /// tab | `pip`
 
     :::bash
-    pip install mkdocs-shadcn
+    pip install mkdocs-shadcn-lwq
 ///
 
 /// tab | uv
 
     :::bash
-    uv add mkdocs-shadcn
+    uv add mkdocs-shadcn-lwq
 ///
 
 /// tab | poetry
 
     :::bash
-    poetry add mkdocs-shadcn
+    poetry add mkdocs-shadcn-lwq
 ///
 ```
 
@@ -47,17 +47,17 @@ markdown_extensions:
     new: true
 
     :::bash
-    pip install mkdocs-shadcn
+    pip install mkdocs-shadcn-lwq
 ///
 
 /// tab | uv
 
     :::bash
-    uv add mkdocs-shadcn
+    uv add mkdocs-shadcn-lwq
 ///
 
 /// tab | poetry
 
     :::bash
-    poetry add mkdocs-shadcn
+    poetry add mkdocs-shadcn-lwq
 ///

@@ -13,18 +13,18 @@ Add the package to your project.
 === "pip"
 
         :::bash
-        pip install mkdocs-shadcn
+        pip install mkdocs-shadcn-lwq
 
 
 === "uv"
 
         :::bash
-        uv add mkdocs-shadcn
+        uv add mkdocs-shadcn-lwq
 
 === "poetry"
 
         :::bash
-        poetry add mkdocs-shadcn
+        poetry add mkdocs-shadcn-lwq
 
 If you want to use [`pymdown` extensions](https://facelessuser.github.io/pymdown-extensions/), you can also install the `pymdown-extensions` package:
 
@@ -56,9 +56,9 @@ You can init your new python project using `uv` and embed `mkdocs` documentation
 ```shell
 uv init myproject 
 cd myproject
-uv add --dev mkdocs mkdocs-shadcn pymdown-extensions Pygments
+uv add --dev mkdocs mkdocs-shadcn-lwq pymdown-extensions Pygments
 uv run mkdocs new .
-echo -e "theme:\n  name: shadcn" >> mkdocs.yml
+echo -e "theme:\n  name: shadcn-lwq" >> mkdocs.yml
 uv run mkdocs serve --livereload
 ```
 
@@ -70,7 +70,7 @@ The theme configuration is roughly the contract with the users. When it changes,
 # mkdocs.yml
 site_name: "awesome-project"
 theme:
-  name: shadcn
+  name: shadcn-lwq
   show_title: true # show the title in the top bar
   show_stargazers: true # show the stargazers in the top bar
   pygments_style: # default styles 

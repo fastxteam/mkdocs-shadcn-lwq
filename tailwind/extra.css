@@ -12,6 +12,36 @@
 	}
 
 	.layout-fixed .container-wrapper {
-		@apply 3xl:max-w-[calc(var(--breakpoint-2xl)+2rem)] 3xl:px-0;
+		max-width: min(calc(100vw - 1.5rem), 88rem);
+	}
+
+	.layout-full .container-wrapper {
+		max-width: min(calc(100vw - 0.75rem), 132rem);
+	}
+
+	@media (max-width: 1279px) {
+		.layout-fixed .container-wrapper,
+		.layout-full .container-wrapper {
+			max-width: none;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.docs-layout {
+			column-gap: clamp(1.25rem, 1.8vw, 2.5rem);
+		}
+
+		.docs-page-frame {
+			gap: clamp(1rem, 1.4vw, 2rem);
+		}
+
+		.docs-page-column {
+			min-width: 0;
+			padding-inline: clamp(0.75rem, 1vw, 1.5rem);
+		}
+
+		.docs-toc {
+			flex: 0 0 18rem;
+		}
 	}
 }

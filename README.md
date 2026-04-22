@@ -6,12 +6,12 @@
     src="https://github.com/asiffer/mkdocs-shadcn/actions/workflows/testing.yaml/badge.svg"
     alt="Testing"
   /></a>
-  <a href="https://pypistats.org/packages/mkdocs-shadcn"><img
-    src="https://img.shields.io/pypi/dm/mkdocs-shadcn.svg"
+  <a href="https://pypistats.org/packages/mkdocs-shadcn-lwq"><img
+    src="https://img.shields.io/pypi/dm/mkdocs-shadcn-lwq.svg"
     alt="Downloads"
   /></a>
-  <a href="https://pypi.org/project/mkdocs-shadcn"><img
-    src="https://img.shields.io/pypi/v/mkdocs-shadcn.svg"
+  <a href="https://pypi.org/project/mkdocs-shadcn-lwq"><img
+    src="https://img.shields.io/pypi/v/mkdocs-shadcn-lwq.svg"
     alt="Python Package Index"
   /></a>
 </p>
@@ -30,17 +30,17 @@ Yes, yes, the [documentation](https://asiffer.github.io/mkdocs-shadcn/) is built
 
 ## Quick start
 
-`mkdocs-shadcn` can be installed with `pip`
+`mkdocs-shadcn-lwq` can be installed with `pip`
 
 ```shell
-pip install mkdocs-shadcn
+pip install mkdocs-shadcn-lwq
 ```
 
 Add the following line to `mkdocs.yml`:
 
 ```yaml
 theme:
-  name: shadcn
+  name: shadcn-lwq
 ```
 
 ## Extensions

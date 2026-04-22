@@ -124,7 +124,7 @@ In $\ref{my-equation}$ we see a relation between fundamental math symbols.
 
         :::yaml
         theme:
-            name: shadcn
+            name: shadcn-lwq
             katex_options:
                 trust: true # <- here
     
