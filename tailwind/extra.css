@@ -7,8 +7,29 @@
 }
 
 @layer utilities {
+	:root {
+		--docs-shell-max-width: 88rem;
+		--docs-shell-gutter: 1.5rem;
+		--docs-layout-gap: clamp(1.25rem, 1.8vw, 2.25rem);
+		--docs-frame-gap: clamp(1rem, 1.35vw, 1.75rem);
+		--docs-page-padding: clamp(0.875rem, 1vw, 1.25rem);
+		--docs-sidebar-width: 240px;
+		--docs-toc-width: 17rem;
+		--docs-content-max-width: 56rem;
+	}
+
+	.docs-layout {
+		--sidebar-width: var(--docs-sidebar-width);
+	}
+
+	.docs-content-limit {
+		width: 100%;
+		max-width: var(--docs-content-max-width);
+	}
+
 	.container-wrapper {
 		@apply w-full mx-auto;
+		max-width: min(calc(100vw - var(--docs-shell-gutter)), var(--docs-shell-max-width));
 	}
 
 	.layout-fixed .container-wrapper {
@@ -17,6 +38,28 @@
 
 	.layout-full .container-wrapper {
 		max-width: min(calc(100vw - 0.75rem), 132rem);
+	}
+
+	.layout-fixed {
+		--docs-shell-max-width: 88rem;
+		--docs-shell-gutter: 1.5rem;
+		--docs-layout-gap: clamp(1.25rem, 1.8vw, 2.25rem);
+		--docs-frame-gap: clamp(1rem, 1.35vw, 1.75rem);
+		--docs-page-padding: clamp(0.875rem, 1vw, 1.25rem);
+		--docs-sidebar-width: 240px;
+		--docs-toc-width: 17rem;
+		--docs-content-max-width: 56rem;
+	}
+
+	.layout-full {
+		--docs-shell-max-width: 132rem;
+		--docs-shell-gutter: 0.75rem;
+		--docs-layout-gap: clamp(0.75rem, 1vw, 1.25rem);
+		--docs-frame-gap: clamp(0.75rem, 1vw, 1.25rem);
+		--docs-page-padding: clamp(1rem, 1.25vw, 1.75rem);
+		--docs-sidebar-width: clamp(13.75rem, 13vw, 14.5rem);
+		--docs-toc-width: clamp(14rem, 15vw, 16rem);
+		--docs-content-max-width: clamp(58rem, calc(100vw - 40rem), 86rem);
 	}
 
 	@media (max-width: 1279px) {
@@ -28,20 +71,21 @@
 
 	@media (min-width: 1280px) {
 		.docs-layout {
-			column-gap: clamp(1.25rem, 1.8vw, 2.5rem);
+			column-gap: var(--docs-layout-gap);
 		}
 
 		.docs-page-frame {
-			gap: clamp(1rem, 1.4vw, 2rem);
+			gap: var(--docs-frame-gap);
 		}
 
 		.docs-page-column {
 			min-width: 0;
-			padding-inline: clamp(0.75rem, 1vw, 1.5rem);
+			padding-inline: var(--docs-page-padding);
 		}
 
 		.docs-toc {
-			flex: 0 0 18rem;
+			flex: 0 0 var(--docs-toc-width);
+			width: var(--docs-toc-width);
 		}
 	}
 }
