@@ -16,7 +16,7 @@ article .codehilite td.linenos {
 }
 
 article .codehilite:has(& > .codehilitetable) {
-	@apply overflow-auto;
+	@apply overflow-x-auto;
 }
 
 article table.codehilitetable pre,
@@ -37,11 +37,11 @@ article .codehilite {
 }
 
 article pre.codehilite {
-	@apply overflow-auto;
+	@apply overflow-x-auto;
 }
 
 article .codehilite pre {
-	@apply mb-0 mt-0 overflow-auto;
+	@apply mb-0 mt-0 overflow-x-auto;
 }
 
 article .codehilite code a {

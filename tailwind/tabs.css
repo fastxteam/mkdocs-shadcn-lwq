@@ -15,7 +15,7 @@ article .tabbed-set label {
 }
 
 article .tabbed-set div.tabbed-content {
-	@apply hidden order-last basis-full border-t border-t-border pt-3 overflow-auto mt-0;
+	@apply hidden order-last basis-full border-t border-t-border pt-3 mt-0;
 }
 
 article .tabbed-content .codehilite {

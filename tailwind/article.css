@@ -59,7 +59,7 @@ article ol {
 }
 
 article pre {
-	@apply block mb-4 mt-6 max-h-[650px] rounded-xl py-4 px-4;
+	@apply block mb-4 mt-6 rounded-xl py-4 px-4;
 }
 
 article > pre {

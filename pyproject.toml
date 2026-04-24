@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-shadcn-lwq"
-version = "0.10.10"
+version = "0.10.11"
 description = "Documentation that also shines"
 authors = [
     { name = "wanqiang.liu", email = "zerocirculation@gmail.com" },

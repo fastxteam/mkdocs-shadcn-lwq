@@ -1,6 +1,6 @@
 {
   "name": "mkdocs-shadcn-lwq",
-  "version": "0.10.10",
+  "version": "0.10.11",
   "author": "wanqiang.liu <zerocirculation@gmail.com>",
   "license": "MIT",
   "packageManager": "bun@1.3.11",
