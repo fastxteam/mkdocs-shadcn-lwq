@@ -36,6 +36,10 @@ article .codehilite {
 	@apply rounded-xl relative mt-6;
 }
 
+article pre.codehilite {
+	@apply overflow-auto;
+}
+
 article .codehilite pre {
 	@apply mb-0 mt-0 overflow-auto;
 }
