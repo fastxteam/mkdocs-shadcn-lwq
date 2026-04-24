@@ -1,5 +1,5 @@
 article .tabbed-set {
-	@apply flex flex-row flex-wrap first-of-type:mt-6;
+	@apply flex flex-row flex-wrap mt-6;
 }
 
 article .tabbed-set input[type="radio"] {
@@ -19,7 +19,7 @@ article .tabbed-set div.tabbed-content {
 }
 
 article .tabbed-content .codehilite {
-	@apply mt-0;
+	@apply mt-3;
 }
 
 article .tabbed-set input[type="radio"]:checked + label + div.tabbed-content {

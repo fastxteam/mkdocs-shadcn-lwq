@@ -1,5 +1,5 @@
 .codexec {
-	@apply relative;
+	@apply relative mt-6;
 }
 
 .codexec > .codexec-result {
