@@ -1,5 +1,9 @@
 .codexec {
-	@apply space-y-2 relative;
+	@apply relative;
+}
+
+.codexec > .codexec-result {
+	@apply mt-2;
 }
 
 .codexec > button {
